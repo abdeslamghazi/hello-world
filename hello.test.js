@@ -5,3 +5,7 @@ import { hello } from "./hello.js";
 test("salue par le prénom", () => {
   assert.equal(hello("Abdeslam"), "Bonjour, Abdeslam !");
 });
+
+test("salutation en arabe", () => {
+  assert.equal(hello("Abdeslam", "ar"), "مرحبا, Abdeslam !");
+});
